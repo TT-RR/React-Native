@@ -26,8 +26,9 @@ export default function NewsScreen({ navigation }) {
                         imageurl={item.urlToImage}
                         title={item.title}
                         subtext={item.publishedAt}
-                        onPress={() => navigation.navigate('詳細ページ')}
-                    // onPress={() => alert('詳細ページに遷移します')}
+                        //onPress={() => navigation.navigate('詳細ページ', { articles: item })}
+                        //　何処に飛ぶのかを第一引数でname属性で指定する
+                        onPress={() => alert('詳細ページに遷移します')}
                     />
                 )}
                 keyExtractor={(item, index) => index.toString()}
