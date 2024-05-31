@@ -1,16 +1,17 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, } from 'react-native';
 
-const NewsKizi = () => {
+// 親要素から値を受け取るには、引数を使う
+const NewsKizi = ({ imageurl, title, subtext }) => {
     return (
         <View style={styles.box}>
             <View style={styles.moziBox}>
-                <Text style={styles.text}>ニュース記事がここに入ります。アプリを作るのは楽しいです。</Text>
-                <Text style={styles.subText}>テム</Text>
+                <Text style={styles.text}>{title}</Text>
+                <Text style={styles.subText}>{subtext}</Text>
             </View>
 
             <View style={styles.gazoBox}>
-                <Image style={{ width: 100, height: 100 }} source={{ url: 'https://picsum.photos/id/25/150/300' }} />
+                <Image style={{ width: 100, height: 100 }} source={{ url: imageurl }} />
             </View>
         </View>
 
