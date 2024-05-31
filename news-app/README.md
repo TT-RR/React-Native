@@ -32,3 +32,7 @@ npm install @react-navigation/stack@^5.x
 ## 画面をタップしたときの処理を書きたいとき…
 #### TouchableOpacity
 反映したい画面の子要素に書く
+
+## WebView
+[WebView公式ページ](https://docs.expo.dev/versions/latest/sdk/webview/)
+自分のスマホアプリの中でWebブラウザを表示させる
