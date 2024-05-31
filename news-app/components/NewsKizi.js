@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 
 // 親要素から値を受け取るには、引数を使う
-const NewsKizi = ({ imageurl, title, subtext }) => {
+const NewsKizi = ({ imageurl, title, subtext, onPress }) => {
     var date = new Date(subtext);
     var year = date.getFullYear();
     var month = date.getMonth() + 1;
@@ -10,7 +10,7 @@ const NewsKizi = ({ imageurl, title, subtext }) => {
     var koukaihiduke = year + "年" + month + "月" + day + "日";
 
     return (
-        <View style={styles.box}>
+        <TouchableOpacity style={styles.box} onPress={onPress}>
             <View style={styles.moziBox}>
                 <Text numberOfLines={3} style={styles.text}>{title}</Text>
                 <Text style={styles.subText}>{koukaihiduke}</Text>
@@ -19,7 +19,7 @@ const NewsKizi = ({ imageurl, title, subtext }) => {
             <View style={styles.gazoBox}>
                 <Image style={{ width: 100, height: 100 }} source={{ url: imageurl }} />
             </View>
-        </View>
+        </TouchableOpacity>
 
     );
 };
