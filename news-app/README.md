@@ -28,6 +28,11 @@ npm install react-native-reanimated react-native-gesture-handler react-native-sc
 ```
 npm install @react-navigation/stack@^5.x
 ```
+4. ボトムタブ
+[ボトムタブ公式ページ](https://reactnavigation.org/docs/bottom-tab-navigator/)
+```
+npm install @react-navigation/bottom-tabs
+```
 
 ## 画面をタップしたときの処理を書きたいとき…
 #### TouchableOpacity
@@ -36,3 +41,6 @@ npm install @react-navigation/stack@^5.x
 ## WebView
 [WebView公式ページ](https://docs.expo.dev/versions/latest/sdk/webview/)
 自分のスマホアプリの中でWebブラウザを表示させる
+
+## Expo専用アイコン一覧
+[アイコン一覧](https://icons.expo.fyi/Index)
